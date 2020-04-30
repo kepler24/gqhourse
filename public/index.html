@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+    <meta name="keywords" content="高奇的小屋">
+    <meta name="description" content="高奇的小屋，高奇的日志，高奇的个人小站">
+    <link rel="icon" href="<%= BASE_URL %>favicon.png">
+    <link rel="stylesheet" href="animate.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        #app {
+            height: 100%;
+        }
+    </style>
+    <title>个人的学习记录</title>
+    <link rel="stylesheet" href="../src/js/swiper.min.css">
+
+<body>
+    <!-- <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script> -->
+
+    <div id="app"></div>
+</body>
+
+</html>
+<!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+<script>
+    function opinion() {
+        if ((navigator.userAgent.match(
+                /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+                ))) {
+            var offWidth = window.screen.width; // 获取设备宽度
+            document.getElementsByTagName("html")[0].style.fontSize = offWidth * (100 / 375) +
+            'px'; 
+
+        } else {
+            var offWidth = window.screen.width;
+            document.getElementsByTagName("html")[0].style.fontSize = offWidth * (100 / 1960) + 'px';
+        }
+    }
+    opinion();
+</script>
