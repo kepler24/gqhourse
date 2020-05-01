@@ -37,14 +37,18 @@
         if ((navigator.userAgent.match(
                 /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
                 ))) {
-            var offWidth = window.screen.width; // 获取设备宽度
+            var offWidth = document.body.clientWidth; // 获取设备宽度
             document.getElementsByTagName("html")[0].style.fontSize = offWidth * (100 / 375) +
             'px'; 
 
         } else {
-            var offWidth = window.screen.width;
-            document.getElementsByTagName("html")[0].style.fontSize = offWidth * (100 / 1960) + 'px';
+            var offWidth = document.body.clientWidth;
+            document.getElementsByTagName("html")[0].style.fontSize = offWidth * (100 / 1000) + 'px';
         }
     }
     opinion();
+    window.onresize = function(){
+        
+        opinion();
+    }
 </script>

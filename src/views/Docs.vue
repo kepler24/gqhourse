@@ -3,8 +3,15 @@
     <section></section>
       <section></section>
       <section></section>
-    <div class="docs_content" >
-      <span class="docs_title">日志列表</span>
+      <div v-if="loading" class="loading">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div  v-else class="docs_content" >
+      <div class="docs_title">日志列表</div>
       <div class="docs_p" v-for="item in dailyList" :key="item._id" >
         <a @click="$router.push({path:'/detail',query:{id:item._id}})">{{item.title}}</a>
         <span class="docs_time">{{item.date | timeFilter}}</span>
@@ -33,7 +40,7 @@ export default {
   
   data() {
     return {
-      
+      loading:true,
       dailyList: [],
       currentPage:1,
       pageSize:10,
@@ -61,7 +68,6 @@ export default {
     this.getList()
   },
   methods: {
-    
     getList(){
       getDailyTitle({
         currentPage:this.currentPage,
@@ -70,6 +76,7 @@ export default {
         this.dailyList = res.data.data;
         this.total = res.data.total;
         localStorage.setItem('page',this.currentPage)
+        this.loading = false
       });
     },
     handleCurrentChange(val){
@@ -123,14 +130,14 @@ section:nth-of-type(3) {
   .docs_content {
     box-sizing: border-box;
     padding: 5%;
-    padding-top: 0;
+    padding-top: 0.4rem;
     width: 100%;
     position:relative;
     .docs_title{
-      font: 100 0.4rem "Comic Sans MS";
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 0.4rem ;
       color: white;
-      text-shadow: 5px 5px 5px rgb(1, 47, 65)
+      text-shadow: 5px 5px 5px rgb(4, 174, 241);
+      line-height: 0.4rem;
     }
     .docs_p {
       cursor: pointer;

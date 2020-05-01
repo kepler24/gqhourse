@@ -10,8 +10,9 @@
     <span v-else>
       <div id="nav">
         <router-link to="/">首页</router-link>
-        <router-link to="/pics">照片</router-link>
         <router-link to="/docs">日志</router-link>
+        <router-link to="/pics">图片</router-link>
+        <router-link to="/videos">视频</router-link>
       </div>
       <router-view />
     </span>
@@ -173,25 +174,24 @@ a {
   text-decoration: none;
 }
 #nav {
-  height: 50px;
+  /* height: 50px; */
   position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
   top: 0;
   left: 0;
-  font-size: 24px;
+  font-size: 0.2rem;
   z-index: 99;
 }
 #nav a {
   color: skyblue;
   display: inline-block;
-  padding: 0 20px 0;
-  height: 50px;
+  padding: 0 0.1rem 0;
+  /* height: 50px; */
   background: white;
   opacity: 0.5;
-
-  line-height: 50px;
+  line-height: 0.4rem;
 }
 #nav a:hover {
   color: rgb(89, 195, 236);

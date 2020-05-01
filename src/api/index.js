@@ -15,7 +15,13 @@ import axios from 'axios'
       data:parameter
     })
   }
-
+  export function getPics (parameter) {
+    return axios({
+      url: '/gao/getPics',
+      method: 'post',
+      data:parameter
+    })
+  }
   export function getDaily (parameter) {
     return axios({
       url: '/gao/getDaily',

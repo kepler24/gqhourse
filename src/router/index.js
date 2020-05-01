@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Pics from '../views/Pics.vue'
 import Docs from '../views/Docs.vue'
+import Videos from '../views/Videos.vue'
 import Detail from '../views/Detail.vue'
 
 Vue.use(VueRouter)
@@ -41,6 +42,15 @@ const routes = [
     component: Detail,
     meta: {
       title:"日志详情",
+      content: 'disable'
+     }
+  },
+  {
+    path: '/videos',
+    name: 'videos',
+    component: Videos,
+    meta: {
+      title:"视频",
       content: 'disable'
      }
   },
