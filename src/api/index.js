@@ -15,9 +15,9 @@ import axios from 'axios'
       data:parameter
     })
   }
-  export function getPics (parameter) {
+  export function getPic (parameter) {
     return axios({
-      url: '/gao/getPics',
+      url: '/gao/getPic',
       method: 'post',
       data:parameter
     })

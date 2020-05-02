@@ -11,7 +11,8 @@
       <section></section>
       <div class="wall1_content animated swing">
         <p>
-          你好~
+          你好~<br/>
+          我叫高奇
           <br />欢迎来到我的个人小站
         </p>
       </div>
@@ -24,8 +25,10 @@
       <section></section>
       <div class="wall1_content">
         <p>
-          我叫高奇
+          我是
           <br />一个前端码农
+          喜欢运动
+          <br />热爱生活<br/>
         </p>
       </div>
     </swiper-slide>
@@ -36,8 +39,9 @@
       <section></section>
       <div class="wall1_content">
         <p>
-          喜欢运动
-          <br />热爱生活
+          在建站过程中<br/>
+          学习技术<br/>
+          积累经验<br/>
         </p>
       </div>
     </swiper-slide>
