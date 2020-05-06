@@ -144,6 +144,7 @@ section:nth-of-type(3) {
       margin-bottom: 3px;
       padding-top: 0.1rem;
       font-size: 0.2rem;
+      color: #666;
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid white;

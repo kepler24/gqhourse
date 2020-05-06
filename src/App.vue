@@ -55,7 +55,7 @@ export default {
   }
 };
 </script>
-<style >
+<style>
 .loading {
   width: 100px;
   height: 100px;

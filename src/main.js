@@ -3,9 +3,15 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 // import Antd from 'ant-design-vue';
-import { Pagination,Loading  } from 'element-ui';
+import { Pagination,Loading,Dialog } from 'element-ui';
+import preview from 'vue-photo-preview'
+  import 'vue-photo-preview/dist/skin.css'
+  import VueTouch from 'vue-touch'
+Vue.use(VueTouch, {name: 'v-touch'})
+  Vue.use(preview)
 Vue.use(Pagination)
 Vue.use(Loading)
+Vue.use(Dialog)
 Vue.config.productionTip = false
 // import VueAwesomeSwiper from 'vue-awesome-swiper'
 // import style
