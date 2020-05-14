@@ -7,7 +7,6 @@ import axios from 'axios'
       data:parameter
     })
   }
-
   export function getOneDaily (parameter) {
     return axios({
       url: '/gao/getOneDaily',

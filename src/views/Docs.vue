@@ -130,7 +130,7 @@ section:nth-of-type(3) {
   .docs_content {
     box-sizing: border-box;
     padding: 5%;
-    padding-top: 0.4rem;
+    padding-top: 0.6rem;
     width: 100%;
     position:relative;
     .docs_title{

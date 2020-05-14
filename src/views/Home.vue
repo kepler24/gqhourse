@@ -1,4 +1,5 @@
 <template>
+<div style="width:100%;height:100%">
   <swiper ref="mySwiper" :options="swiperOptions">
     <!-- <div class="btn .swiper-button-next" @click="nextPage"> -->
 
@@ -46,7 +47,13 @@
       </div>
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
+    
+    
   </swiper>
+  <div class="beian">Designed by GaoQi.<br/><a style="color:#333" href="http://www.beian.miit.gov.cn/" target="blank">
+  
+  京ICP备20013004号-1</a></div>
+  </div>
 </template>
 
 <script>
@@ -93,6 +100,13 @@ export default {
 };
 </script>
 <style scoped>
+.beian{
+  position: fixed;
+  left: 0.04rem;
+  bottom: 0.04rem;
+  font-size: 0.1rem;
+  z-index: 100;
+}
 .swiper-button-next {
   top: 96% !important;
   left: 50%;

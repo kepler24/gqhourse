@@ -14,7 +14,7 @@ const routes = [
     name: 'home',
     component: Home,
     meta: {
-      title:"个人的学习记录",
+      title:"高奇的个人小站",
       content: 'disable'
      }
   },
