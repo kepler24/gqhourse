@@ -1,5 +1,6 @@
 const CompressionPlugin = require("compression-webpack-plugin");
 module.exports = {
+    publicPath:'/hourse/',
     devServer:{
         open:true,
         port:8080,
