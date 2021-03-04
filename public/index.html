@@ -44,7 +44,9 @@
 
         } else {
             var offWidth = document.body.clientWidth;
-            document.getElementsByTagName("html")[0].style.fontSize = offWidth * (100 / 1000) + 'px';
+            if(offWidth<900){
+                document.getElementsByTagName("html")[0].style.fontSize = offWidth * (100 / 1000) + 'px';
+            }
         }
     }
     opinion();
